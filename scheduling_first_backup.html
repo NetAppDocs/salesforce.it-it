@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Pianificazione di un backup o modifica della frequenza di backup</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Pianificazione di un backup o modifica della frequenza di backup" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/salesforce/scheduling_first_backup.html" />
+	<meta property="og:description" content="Una volta protetti i dati in Sandbox o Production Instance, è possibile scegliere di spostarli in qualsiasi momento in un altro livello di backup." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/salesforce/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Una volta protetti i dati in Sandbox o Production Instance, è possibile scegliere di spostarli in qualsiasi momento in un altro livello di backup.">
+  <meta name="keywords" content=" netapp, saas backup, salesforce, moving, organization, different, backup, tier"><!-- Icons -->
+  <link rel="icon" href="/it-it/salesforce/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/salesforce/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/salesforce/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/salesforce/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/salesforce/scheduling_first_backup.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/salesforce/scheduling_first_backup.html" />
+  <link rel='stylesheet' href='/it-it/salesforce/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/salesforce/js/na-search.js'></script><script src='/it-it/salesforce/js/na-pagenav.js'></script><script src='/it-it/salesforce/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/it-it/salesforce/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/it-it/salesforce/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/it-it/salesforce/js/na-utility.js'></script> -->
+  <script src='/it-it/salesforce/js/clouddocs.js'></script>
+  <script src='/it-it/salesforce/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src='/it-it/salesforce/js/toc.js'></script> -->
+  <!-- <script src='/it-it/salesforce/js/customscripts.js'></script> --><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/it-it/salesforce"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/it-it/salesforce/js/custom-dropdown.js'></script>
+  <script src='/it-it/salesforce/js/FileSaver.min.js'></script>
+  <script src='/it-it/salesforce/js/jszip-utils.min.js'></script>
+  <script src='/it-it/salesforce/js/jszip.min.js'></script>
+  <!-- <script src='/it-it/salesforce/js/pdf-ux.js'></script> -->
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/salesforce.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/salesforce/scheduling_first_backup.html&page-title=Pianificazione di un backup o modifica della frequenza di backup" class="page-nav-contribute-link" role="button"><img src="/it-it/salesforce/images/discuss-sm.svg" alt="" class="github-icon" />Richiedi modifiche alla documentazione</a><a target="_blank" href="https://github.com/NetAppDocs/salesforce/blob/main/task_scheduling_first_backup.adoc" class="page-nav-contribute-link" role="button"><img src="/it-it/salesforce/images/edit-sm.svg" alt="" class="github-icon" />Modifica questa pagina</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/it-it/salesforce/images/article-sm.svg" alt="" class="github-icon" />Scopri come collaborare</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">IN QUESTA PAGINA</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Prodotto e soluzioni</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Supporto e training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Testimonianze dei clienti</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/company/contact-us/" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contatto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/it-it/salesforce/images/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/it-it/salesforce/images/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/it-it/salesforce/images/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/it-it/salesforce/search.html"
+          data-type="widget" 
+          data-placeholder="Esplora la documentazione"
+          data-no-results-found="Nessun risultato per {query}"
+          data-did-you-mean="Cerca {suggestion}."
+          data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+          data-results-found="{hitCount} risultati trovati"
+          data-error-message="Si è verificato un problema durante il recupero dei risultati. Riprova."
+          data-error-reset="Reimposta ricerca"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/salesforce/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Italiano</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/salesforce/images/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/it-it/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/es-es/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/salesforce/scheduling_first_backup.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div>
+    <!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/it-it/salesforce/images/collapse.png" alt="Comprimi pannello di navigazione"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/it-it/salesforce/images/pdf.png" alt="" width="16" height="16"/>PDF disponibili<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/it-it/salesforce/pdfs/fullsite-sidebar/NetApp_SaaS_Backup_per_la_documentazione_di_Salesforce.pdf" >
+          <img src="/it-it/salesforce/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/salesforce/pdfs/sidebar/Note_di_rilascio.pdf" 
+            
+          >
+            <img src="/it-it/salesforce/images/pdf.png" alt="" width="16" height="16"/>
+            Note di rilascio
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/salesforce/pdfs/sidebar/Gestisci_SaaS_Backup_per_Salesforce.pdf" 
+            
+          >
+            <img src="/it-it/salesforce/images/pdf.png" alt="" width="16" height="16"/>
+            Gestisci SaaS Backup per Salesforce
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/salesforce/pdfs/sidebar/Visualizzare_i_dati.pdf" 
+            
+          >
+            <img src="/it-it/salesforce/images/pdf.png" alt="" width="16" height="16"/>
+            Visualizzare i dati
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/it-it/salesforce/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documenti di NetApp SaaS Backup per Salesforce"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/index.html">
+        Documenti di NetApp SaaS Backup per Salesforce
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Note di rilascio</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/reference_new_salesforce.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Problemi e limitazioni noti"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/concept_kpls.html">
+        Problemi e limitazioni noti
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/concept_overview.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestisci SaaS Backup per Salesforce"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestisci SaaS Backup per Salesforce</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Policy di backup"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/reference_backup_policies.html">
+        Policy di backup
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esecuzione di un backup immediato"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_performing_immediate_backup.html">
+        Esecuzione di un backup immediato
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Attivazione e disattivazione dei backup dei metadati"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_enable_disable_metadata_backups.html">
+        Attivazione e disattivazione dei backup dei metadati
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ripristino dei dati"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_managing_restores.html">
+        Ripristino dei dati
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Confronto e ripristino delle differenze di backup"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_comparing_restoring.html">
+        Confronto e ripristino delle differenze di backup
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Eliminazione di dati e metadati"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_purging_data_&_metadata.html">
+        Eliminazione di dati e metadati
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riautenticazione in corso"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_reauthenticating.html">
+        Riautenticazione in corso
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Annullamento di un lavoro"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_canceling_job.html">
+        Annullamento di un lavoro
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizzare i dati"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Visualizzare i dati</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizzazione della cronologia dei lavori"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_viewing_job_history.html">
+        Visualizzazione della cronologia dei lavori
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizzazione del registro delle attività"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_viewing_activity_log.html">
+        Visualizzazione del registro delle attività
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Download del registro delle attività in corso"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_downloading_activity_log.html">
+        Download del registro delle attività in corso
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Download dei dati di esportazione in corso"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_downloading_export_data.html">
+        Download dei dati di esportazione in corso
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizzazione dei record di backup"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_viewing_backup_records.html">
+        Visualizzazione dei record di backup
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire un feedback"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/task_providing_feedback.html">
+        Fornire un feedback
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Dove trovare assistenza e ulteriori informazioni"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/concept_get_help_find_info.html">
+        Dove trovare assistenza e ulteriori informazioni
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/salesforce/reference_legal_notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/it-it/salesforce/images/expand.png" alt="Espandi pannello di navigazione"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/it-it/salesforce/">SaaS&nbsp;Backup&nbsp;For&nbsp;Salesforce</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/it-it/salesforce/images/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Pianificazione di un backup o modifica della frequenza di backup</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2023-05-23 11:58:45 +0000">05/23/2023</time>
+    
+  
+
+<span>Collaboratori
+</span>
+
+
+</p>
+
+<div class="paragraph lead">
+<p>Se si aggiunge un&#8217;istanza Sandbox in SaaS Backup per Salesforce, per impostazione predefinita, tutti i dati in Sandbox non sono protetti fino a quando non vengono spostati manualmente in un Tier di backup protetto. Una volta protetti i dati in Sandbox o Production Instance, è possibile scegliere in qualsiasi momento di spostarli in un altro livello di backup.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Fasi</div>
+<ol class="arabic">
+<li>
+<p>Nel riquadro di navigazione a sinistra, fare clic su <strong>servizi</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/services.jpg" alt=""></span></p>
+</div>
+</li>
+<li>
+<p>Se si desidera spostare un&#8217;organizzazione nell&#8217;istanza di produzione, fare clic su <strong>istanze di produzione</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/production_instances.gif" alt=""></span>Se si desidera spostare un&#8217;organizzazione nell&#8217;istanza Sandbox, fare clic su <strong>istanze Sandbox</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sandbox_instances.gif" alt=""></span></p>
+</div>
+</li>
+<li>
+<p>Selezionare la categoria di istanza corretta per l&#8217;organizzazione che si desidera spostare.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic sul numero sopra <strong>ISTANZE PROTETTE</strong>, se l&#8217;organizzazione che si desidera spostare è attualmente protetta da una policy di backup.</p>
+</li>
+<li>
+<p>Fare clic sul numero sopra <strong>ISTANZE in sospeso</strong>, se lo stato del backup dell&#8217;organizzazione che si desidera spostare è in sospeso,</p>
+</li>
+<li>
+<p>Fare clic sul numero riportato sopra <strong>ISTANZE NON PROTETTE</strong>, se l&#8217;organizzazione che si desidera spostare non è attualmente protetta da un criterio di backup.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Selezionare il nuovo livello. Per le istanze di Sandbox sono disponibili solo backup di Tier 2 e Tier 3. Non è possibile eseguire il backup delle istanze di sandbox in base al criterio di livello 1. Le istanze di produzione possono essere nel criterio di livello 1 o non protette. Non è possibile eseguire il backup delle istanze di produzione in base ai criteri di Tier 2 o Tier 3. L&#8217;organizzazione viene spostata nel nuovo Tier di backup.</p>
+</li>
+</ol>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui Cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/salesforce/images/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/salesforce/images/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/salesforce/images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/salesforce/images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/salesforce/images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/salesforce/images/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/salesforce/images/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/salesforce/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/salesforce/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/salesforce/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/salesforce/js/tabbed-blocks.js'></script>
+    <script src='/it-it/salesforce/js/sidebar.js'></script>
+  </body></html>

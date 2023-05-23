@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task_providing_feedback.html 
+keywords: netapp, saas backup, salesforce, feedback, questions 
+summary: Fornisci un feedback che ci aiuti a servirti meglio. 
+---
+= Fornire un feedback
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Il tuo feedback sul prodotto NetApp SaaS Backup per Salesforce ci aiuta a servirti meglio. Puoi fornire feedback da Inside SaaS Backup.
+
+
+toc::[]
+.Fasi
+. Fare clic su image:support.png[""] nel riquadro di navigazione a sinistra.
+. Selezionare *Feedback*.
+. Completa il breve sondaggio di feedback.
+. Fare clic su *Invia*.
+
+
+Se si desidera ricevere una notifica automatica quando viene rilasciata la documentazione a livello di produzione o vengono apportate modifiche importanti ai documenti esistenti a livello di produzione, seguire l'account Twitter @NetAppDoc.

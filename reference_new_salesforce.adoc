@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: reference_new_salesforce.html 
+keywords: 'what"s new, features, new, release notes, enhancements' 
+summary: SaaS Backup per Salesforce introduce regolarmente una nuova release per offrire nuove funzionalità, miglioramenti e correzioni di bug. 
+---
+= Nuove funzionalità e aggiornamenti
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Le seguenti nuove funzionalità e aggiornamenti sono stati aggiunti a questa release di NetApp SaaS Backup per Salesforce.
+
+
+
+== Dicembre 2020
+
+* SaaS Backup per Salesforce ora ripristina i metadati. Questo miglioramento delle funzionalità include ripristini a livello di organizzazione e ripristini granulari di singoli o più elementi per i metadati.
++
+Ripristino dei metadati a livello di organizzazione
+
++
+image:org_level_restore_metadata_option_cropped.png["Opzione di ripristino dei metadati a livello di organizzazione ritagliata"]
+
++
+Ripristino dei metadati a livello granulare
+
++
+image:restore_options_export-restore_metadata.png["esportare e ripristinare le opzioni dei metadati"]
+
++
+link:task_managing_restores.html["Ripristino dei dati"]
+
+* Il *Riepilogo backup* è un miglioramento delle funzionalità di SaaS Backup per Salesforce che ti offre il numero totale di tutti i record creati, aggiornati ed eliminati. Consente di verificare che il numero dei record di backup corrisponda a quello del tuo account Salesforce.
++
+link:task_viewing_backup_records.html["Visualizzazione dei record di backup"]
+
+
+
+
+
+== Ottobre 2020
+
+* SaaS Backup per Salesforce ora esegue il backup dei metadati. Questo miglioramento della funzionalità include backup, ripristini a livello di oggetti e organizzazione e purge per i metadati creati. L'interfaccia utente dispone inoltre di una nuova scheda *tipi di metadati e componenti* in cui è possibile visualizzare i backup dei metadati. Queste pagine forniscono ulteriori informazioni su questa nuova funzione:
++
+link:task_enable_disable_metadata_backups.html["Attivazione e disattivazione dei metadati"]
+link:task_managing_restores.html["Ripristino dei dati"]
+
+* A partire da ottobre 2020, è possibile eliminare i dati. I metadati vengono eliminati automaticamente dopo 90 giorni.
++
+link:task_purging_data_&_metadata.html["Eliminazione di dati e metadati"]
+
+
+
+
+
+== Febbraio 2020
+
+È ora possibile esportare i dati a livello di oggetto e organizzazione. Per ogni esportazione, è possibile scaricare allegati, risultati e statistiche da un backup precedente.link:task_downloading_export_data.html["Download dei dati di esportazione in corso"]

@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_job_history.html 
+keywords: netapp, saas backup, salesforce, viewing, job, history 
+summary: Puoi visualizzare un elenco di tutti i lavori completati, annullati o non riusciti in SaaS Backup per Salesforce. 
+---
+= Visualizzazione della cronologia dei lavori
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puoi visualizzare un elenco di tutti i lavori completati, annullati o non riusciti in SaaS Backup per Salesforce.
+
+.Fasi
+. Dal riquadro di navigazione a sinistra, fare clic su *Reporting*.image:reporting.jpg[""]Viene visualizzata la cronologia dei lavori.
+. Nell'angolo in alto a destra, fare clic su *Filter* (filtro).image:filter.jpg[""]
+. Selezionare il filtro che si desidera utilizzare per perfezionare i risultati del report. È possibile filtrare in base alla policy di backup, al servizio o al tipo di lavoro.
+. Fare clic nella casella *Cerca* e selezionare la policy, il servizio o il tipo di lavoro di backup specifico per cui si desidera visualizzare i risultati. Aggiungere altri filtri in base alle necessità.image:reporting_filter.jpg[""]
+. Fare clic su *Applica filtro*.
+

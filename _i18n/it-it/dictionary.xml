@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="92f856161fa8f81bc4e945d0b7170384" category="summary">È possibile scaricare allegati, risultati e statistiche utilizzando la funzione di esportazione nei dati.</block>
+  <block id="c41fcd1478e92a3f4218e36f395b11ef" category="doc">Download dei dati di esportazione in corso</block>
+  <block id="f38ac5c423a8fd7fabd1c5456f02ad53" category="paragraph">È possibile esportare i dati a livello di oggetto e organizzazione. Per ogni esportazione, è possibile scaricare allegati, risultati e statistiche da un backup precedente.</block>
+  <block id="2a01ae3814b88563f913199a6008c2ca" category="section-title">Esportazione a livello di oggetto</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Fasi</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-image-macro"></block>
+  <block id="c6aff3753ce09bcfb3d2b41b0a79b0e3" category="list-text">Nel riquadro di navigazione a sinistra, fare clic su *servizi*.<block ref="5ba64ff8e229cabdd4607f87216788c3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5f041d8db3b153086beeb72300f6b9c2" category="inline-image-macro">L'immagine mostra la casella istanze di produzione</block>
+  <block id="a7d1e7db6a3bd1ab0530ba311e8d7a45" category="inline-image-macro">L'immagine mostra la casella istanze sandbox</block>
+  <block id="c0d1e974351fe0bc90e5439113bdc226" category="list-text">Fare clic su *istanze di produzione* o *istanze sandbox*.<block ref="3efb934d065119d0d977a01235119f21" category="inline-image-macro-rx" type="image"></block>
+<block ref="74113e3b84abd7b45a9a9b49b1f69ba7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f2c3c2c4f02328be900017e4b7cba694" category="inline-image-macro">L'immagine mostra le istanze protette</block>
+  <block id="66afa706f8158838b122c5e58c08386e" category="list-text">Fare clic sul numero di *istanze protette*.<block ref="74c1c9078b16f1abb5273b10c2824d6f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="276a073a3303ba2141cf18b4edf8cc06" category="inline-image-macro">L'immagine mostra dove fare clic sul nome dell'organizzazione</block>
+  <block id="3d59469471281217c5f91b944abae1c3" category="list-text">Fare clic sul nome dell'organizzazione.<block ref="2a793825c204c0c8c788f5b667261f38" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="30178cec99dfc0c06f8a0a2650f2fc2e" category="inline-image-macro">L'immagine mostra il pulsante di ripristino</block>
+  <block id="3a76b3539caa4a3ae469882db407524a" category="list-text">Selezionare gli oggetti da esportare e fare clic su *Restore* (Ripristina).<block ref="ed099f1d0e68ac4814c1f0e91c394c36" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7796069b65b42b7b465aa5d107c3c1b5" category="list-text">Se necessario, selezionare *Ripristina relazioni* o *Ripristina file/allegati* per includerli nell'esportazione.</block>
+  <block id="40b27afc2ccdbe82882d3c01870ca75f" category="admonition">Se si seleziona *Ripristina relazioni*, il lavoro esporta l'oggetto selezionato e tutti i relativi oggetti di relazione. Se non si seleziona *Ripristina relazioni*, il lavoro esporta solo gli oggetti selezionati.</block>
+  <block id="4b5d2dd70af718ebe67bfea5b43d8667" category="list-text">Fare clic su *Invia*.</block>
+  <block id="f705cfc7a65a6b52e15591b6d50ce367" category="list-text">Fare clic su *Jobs* nella navigazione a sinistra per visualizzare il processo di ripristino.</block>
+  <block id="eb5329f3cdd0b8f67ddd06b3ab96c829" category="list-text">Fare clic su *Total Objects* o *Successful* per visualizzare i dettagli del lavoro e le opzioni di download.</block>
+  <block id="15c44f1d27191a0964800be2dd9caf67" category="list-text">Per i lavori di esportazione con *Restore Files/Attachments*, sono disponibili tre opzioni di download:</block>
+  <block id="334b05e28f9e3c95d3013539383ab79a" category="inline-image-macro">L'immagine mostra il pulsante di collegamento per il download dei dati di esportazione</block>
+  <block id="164009c19e49dc2bd3564c2465dec21b" category="list-text">Per i risultati, fare clic su <block ref="ee1b0ffdb9fe671b55d7e2d2900991da" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="0b554cf7d0cd029fe76b24ea6c603b55" category="list-text">Nel Finder, individuare il file .tar.gz scaricato.</block>
+  <block id="79dd9c251978b20ce2fb30eae760a500" category="list-text">Decomprimere il file per ottenere un file .tar.</block>
+  <block id="b7f24e7b78e56db9c5f2ce0d2993bec2" category="list-text">Estrarre il file .tar per visualizzare i risultati DI EXCEL.</block>
+  <block id="6fed68d63f4d557826ce2aed5b9e08a2" category="inline-image-macro">L'immagine mostra il collegamento per il download degli allegati</block>
+  <block id="6588745f7e70dacfa4aa4bd33aa0999c" category="list-text">Per gli allegati, fare clic su <block ref="f0d0ca820fef4086d5e83a4fc076ee6a" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="0decf83c12f33f94b9e21a9396029942" category="list-text">Estrarre il file .tar per visualizzare gli allegati.</block>
+  <block id="ee1ca5819ccaf145f82ef29f2993c8f7" category="inline-image-macro">L'immagine mostra il link per il download</block>
+  <block id="92e5479dbacf366fa8a81f85adb7aabb" category="list-text">Per visualizzare un report delle statistiche, fare clic su <block ref="e1176c9d3fdda36b778bcc02d33b070f" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="75ee5e5f484aca20bedccf27f4d1f5ab" category="list-text">Per i lavori di esportazione senza *Ripristina file/allegati*, sono disponibili due opzioni di download:</block>
+  <block id="1d7782c515324c7a2802c0ddffde4b64" category="inline-image-macro">L'immagine mostra il link per il download dei dati di esportazione</block>
+  <block id="cec9512f8c8e46dd085810bb30259d75" category="list-text">Per i risultati, fare clic su <block ref="6661fba7ca5be28c7b6ffd52e6404fdb" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="dc2b75fc39db1e636a25312eb666dfc0" category="section-title">Esportazione a livello di organizzazione</block>
+  <block id="0def803db7f32b91b0966d8e8dc50ff3" category="inline-image-macro">L'immagine mostra il menu a discesa del livello</block>
+  <block id="1d1777ba8766e292135a06ed2449955d" category="list-text">Selezionare il *Tier*.<block ref="32e248ec398293680426752180c37ea4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59e5341ebbc4de63119156e493008872" category="inline-image-macro">L'immagine mostra l'elenco a discesa di ripristino con l'opzione di esportazione</block>
+  <block id="7f9e82bcb91ebbf91153c9417f18c8d4" category="list-text">Fare clic su *Restore* (Ripristina), quindi su *Export Data* (Esporta dati).<block ref="a3e073f6dd75aa1ec102f8aa055522b0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="43a5e9f782e7425a5de082621292c31a" category="list-text">Se necessario, fare clic su *Restore Files/Attachments* (Ripristina file/allegati) per includerli nell'esportazione.</block>
+  <block id="a5f832ff0ee5864da54220ac9154e3f6" category="list-text">Fare clic su *Total Organizations* o *Successful* per visualizzare i dettagli del lavoro e le opzioni di download.</block>
+  <block id="0cebcf4339f902fdf1525ec660af0ae0" category="summary">È possibile annullare un backup o un ripristino immediato. Non è possibile annullare un backup pianificato.</block>
+  <block id="0371b86706bebc66ab7d2867f25222f4" category="doc">Riautenticazione in corso</block>
+  <block id="38b3b15aa40d87ba9a9deeee25cd9978" category="paragraph">Salesforce consente l'utilizzo di un massimo di 5 token prima che tu debba autenticare nuovamente le tue credenziali. Se si tenta di avviare un backup o un ripristino e tutti i token sono stati utilizzati, viene visualizzato il seguente messaggio di errore: "Token di accesso/refresh scaduto". Se si riceve questo messaggio, è necessario eseguire nuovamente l'autenticazione prima di procedere.</block>
+  <block id="728f9cb24ecfd35a7e315f00f6a55628" category="inline-image-macro">Icona delle impostazioni</block>
+  <block id="8d499e5c1f59d0ec55de50137566c0b0" category="list-text">Nell'angolo in alto a sinistra della dashboard, fare clic su <block ref="0f7cd87e94c220fddeb0cfa6fca9f3a2" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="173eb3c4fa5f55eb6a003a37ddb9a241" category="list-text">In *SERVICE SETTINGS* (IMPOSTAZIONI SERVIZIO), selezionare *Salesforce*.</block>
+  <block id="018fe6950e6c2fd26254cfa46079f320" category="list-text">FARE CLIC SU *GRANT ACCESS PERMISSIONS*.</block>
+  <block id="20d6b70306e95bc0f067085e43915383" category="inline-image-macro">Icona Grant Access Permissions</block>
+  <block id="e437a0bb03b60349b5e0dedc640c9533" category="paragraph"><block ref="e437a0bb03b60349b5e0dedc640c9533" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9dfee0005dab9bba9f36b8863a25d572" category="list-text">Fare clic sulla scheda *PRODUZIONE* o *SANDBOX* per selezionare l'istanza da autenticare nuovamente.</block>
+  <block id="52195dc201f53841700962d052dae8de" category="inline-image-macro">Icona di riautenticazione</block>
+  <block id="b8762728802bb6a142dca1f36cfa72d3" category="list-text">Fare clic su <block ref="77891bfbce05afd8e1492f25f6c97ff1" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="7a519e43e124133e436f67b709916720" category="paragraph">Verrai reindirizzato a *Salesforce* per inserire le tue credenziali. Dopo la riautenticazione, è possibile avviare il processo di backup o ripristino.</block>
+  <block id="38f629e4063339d47faa2680fb5430b6" category="summary">Puoi utilizzare SaaS Backup per Salesforce per ripristinare i dati di cui hai precedentemente eseguito il backup.</block>
+  <block id="75df29488cee441970e635e10895ab96" category="doc">Ripristino dei dati</block>
+  <block id="8a6db028191283c703eed35a59f0f74c" category="paragraph">Puoi utilizzare SaaS Backup per Salesforce per ripristinare i dati e i metadati di cui hai precedentemente eseguito il backup.</block>
+  <block id="adf8947a481ea3232bf3da08253b821d" category="section-title">Ripristino del backup più recente</block>
+  <block id="f22d8c940dd594c29cdb0e25b5f0ff4b" category="list-text">Fare clic su *istanze di produzione* o *istanze sandbox*.<block ref="ce00dffed0446e4163769bd4d24d0914" category="inline-image-macro-rx" type="image"></block>
+<block ref="6327247e9a4189d75bc19c6623ed5709" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c116887cfb620b2ca4a1acf0745d5e7" category="list-text">Fare clic sul numero di *istanze protette*.</block>
+  <block id="79c4d77aceeed505ab8121e308ff5b4a" category="list-text">Fare clic sul nome dell'organizzazione.<block ref="1817e809bf9d7df296a1d69c4e0dda36" category="inline-image-macro-rx" type="image"></block>Viene visualizzato un elenco di oggetti. Gli oggetti ripristinabili vengono visualizzati per impostazione predefinita. Per visualizzare gli oggetti non ripristinabili, selezionare "Includi oggetti non ripristinabili". Gli oggetti non ripristinabili sono indicati da un'icona grigia. L'icona rossa rappresenta gli oggetti ITEMS di cui non è stato possibile eseguire il backup nel backup corrente, ma che possono essere ripristinati dai backup precedenti.</block>
+  <block id="f0e741adf1f4636010ab7912a90e0d62" category="cell">Oggetto ripristinabile</block>
+  <block id="c9896954c6582a1b229339c2a97ed94c" category="cell"><block ref="c9896954c6582a1b229339c2a97ed94c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad52f7abc0c5621c70b3fe3794068584" category="cell">Oggetto non ripristinabile</block>
+  <block id="a447cb0397bd6db105ae836d1ee69e2a" category="cell"><block ref="a447cb0397bd6db105ae836d1ee69e2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9c0e39cb5624fcf0b522617c02adfc86" category="cell">Oggetto non riuscito</block>
+  <block id="81f36c287489cb43d6cf4e516aca36bb" category="cell"><block ref="81f36c287489cb43d6cf4e516aca36bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7665370e8e026859a282e595079156d" category="list-text">Fare clic sull'oggetto contenente i singoli record che si desidera ripristinare, quindi cercare il record specifico.</block>
+  <block id="6b351fbbc96bbe0acc4f58cc5cd8c782" category="list-text">Fare clic su *Restore* (Ripristina).<block ref="6a0129bd981fc3ad0e02f2927f1a7ff1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c26a6eb284324a812b915bb8e0b4eb68" category="list-text">Selezionare le opzioni di ripristino.</block>
+  <block id="4f580e38623f62e51cd2cefb3b789d9b" category="list-text">Per impostazione predefinita, viene selezionato il comando Ripristina con sovrascrittura*. Questa opzione sostituisce la versione esistente del record che si sta ripristinando. Se si desidera mantenere la versione corrente del record e la versione ripristinata del record, deselezionare questa opzione.</block>
+  <block id="fa7d0b38bf1d841cb6d413219f3c8af7" category="list-text">*Restore Relationship* ripristina i figli dei record padre insieme al padre fino a cinque livelli. Se non si seleziona per ripristinare la relazione, viene ripristinato solo il record principale.</block>
+  <block id="2bb1a2ca659e89cf061d22c74456e4dc" category="list-text">*Esporta dati* consente di esportare i dati da un backup in un momento specifico. È possibile esportare i dati a livello di oggetto o di organizzazione. Per ulteriori informazioni sulla funzione di esportazione dei dati, visitare il sito Web all'indirizzo <block ref="bd57f30b27e10897ea9932aca05fd4c5" category="inline-link-macro-rx"></block>.</block>
+  <block id="3d644191b8439be769793e5b4338ebd8" category="admonition">I lavori di esportazione sono disponibili solo per sette giorni dopo il completamento.</block>
+  <block id="ccdd51c8a17863ce99613ded0df18c8f" category="list-text">Fare clic su *Invia*.<block ref="003ffff3e7bcb2f603c1adba17df45a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8a4ab2bb9b495040fdb7c88debb397b5" category="section-title">Ripristino da un backup precedente</block>
+  <block id="b127f46ec5d0998e11976258a86c1d00" category="list-text">Fare clic su *istanze di produzione* o *istanze sandbox*.<block ref="0652f08cba27dfe3987a4e25eac06e4d" category="inline-image-macro-rx" type="image"></block>
+<block ref="b8961c53d86fae2a6712f3d9f5271f84" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6e6a294919979dec0dad4dccdf93997f" category="list-text">Fare clic sul nome dell'organizzazione.<block ref="1817e809bf9d7df296a1d69c4e0dda36" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3bb7cf21162455d4d3d958f085ec5852" category="list-text">Fare clic su *View Backup History* (Visualizza cronologia backup).</block>
+  <block id="195f666fab10353a7efc8d963642607b" category="list-text">Selezionare per visualizzare i backup per un intervallo di tempo specifico o per selezionare un backup per una data specifica.</block>
+  <block id="a4a4358180c5c021fbef8cbc31e589a1" category="list-text">Per selezionare i backup per un intervallo di tempo specifico, nell'angolo in alto a destra, fare clic sul menu a discesa accanto a *Mostra backup selezionati* e selezionare uno degli intervalli di giorni predefiniti.<block ref="14d89ef23a36163ec3edac4f43fddec8" category="inline-image-macro-rx" type="image"></block>Viene visualizzato un elenco di backup che si sono verificati durante l'intervallo selezionato.</block>
+  <block id="a8c25a29c5bda9a5223c09c83c61fc8f" category="list-text">Per selezionare un backup per una data specifica, fare clic sulla data del backup nel calendario, quindi selezionare il backup specifico desiderato. Il numero nel cerchio rosso indica il numero di backup eseguiti in quella data. I singoli cerchi verdi indicano i singoli backup.</block>
+  <block id="b56f1944dfa4fcbfe001c9e029b44e93" category="list-text">Fare clic sull'oggetto contenente i singoli record che si desidera ripristinare, quindi cercare il record specifico.</block>
+  <block id="9173e66cc6de387eb79375a7e947c90a" category="list-text">Fare clic su *Invia*. Viene visualizzato un messaggio che indica che le organizzazioni selezionate sono state inserite nella coda dei lavori.</block>
+  <block id="7638ba7dd85a6af947a9ff3433ed1d3a" category="section-title">Ripristino dei metadati</block>
+  <block id="a4613816143e18f846e3015a4e661881" category="paragraph">È possibile ripristinare i metadati a livello di organizzazione o granulare.</block>
+  <block id="a652e5b831c8000fa9015a431df04b5c" category="section-title">Ripristini dei metadati a livello di organizzazione</block>
+  <block id="a51c1ff158fc7463dfc53f6537d9a1de" category="list-text">Accedere a *servizi*.</block>
+  <block id="a0109cde0d3bb01c517c86cc40872c22" category="list-text">Selezionare *istanze di produzione* o *istanze sandbox*.</block>
+  <block id="82d060b2d9bd2592eaab16c2a2002e24" category="list-text">Fare clic sul numero di istanze *protette*.</block>
+  <block id="b4fa8b53fbbdaabd05af70acf49f13f5" category="list-text">Fare clic sul nome dell'organizzazione.</block>
+  <block id="357a35aedd0c37deb3a881df778a9bb4" category="list-text">Fare clic su *Restore* (Ripristina).</block>
+  <block id="0e29911c075e29d2f52fcf8c94b9123e" category="list-text">Selezionare un'opzione di ripristino.</block>
+  <block id="1b72fb029709b56f99d13f2d09497620" category="list-text">Per esportare i metadati, selezionare *Esporta metadati*. Viene creato un file zip.</block>
+  <block id="55a44e087a271e69ad074bf4dd9476b8" category="admonition">I job di esportazione dei metadati sono disponibili per 30 giorni dopo il completamento.</block>
+  <block id="4a7c1c167bb54449f29b25eb5e435d3c" category="list-text">Per ripristinare i metadati, selezionare *Restore Metadata* (Ripristina metadati).</block>
+  <block id="0a16681cfbc11c1e3ab8b2028259b888" category="section-title">Ripristini di metadati a livello granulare</block>
+  <block id="7d8bbcc98602d1953273468f90996794" category="list-text">Fare clic sulla scheda *tipi di metadati e componenti*. Viene visualizzato un elenco di tipi di metadati.</block>
+  <block id="0b44a282fea9f318d6aa6fe35f14e417" category="list-text">Selezionare i tipi di metadati che si desidera ripristinare.</block>
+  <block id="ddf2845ff5cfefc8a98c1d794b252068" category="inline-image-macro">esportare e ripristinare le opzioni di ripristino dei metadati</block>
+  <block id="26d55f3915c82135ff8ac17c10c2ded7" category="paragraph"><block ref="26d55f3915c82135ff8ac17c10c2ded7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5dab448b471a72c2df165b5b17e3ac99" category="summary">SaaS Backup per Salesforce introduce regolarmente una nuova release per offrire nuove funzionalità, miglioramenti e correzioni di bug.</block>
+  <block id="3e248cf36a6ce8d04e21a6fbb7b087f0" category="doc">Nuove funzionalità e aggiornamenti</block>
+  <block id="a94884a92a91f310b096d503d4c8f13e" category="paragraph">Le seguenti nuove funzionalità e aggiornamenti sono stati aggiunti a questa release di NetApp SaaS Backup per Salesforce.</block>
+  <block id="a5667679a016ee66ef9bc45c1a173b3b" category="section-title">Dicembre 2020</block>
+  <block id="cad596f2fae1616364cc19389f6aa0c6" category="list-text">SaaS Backup per Salesforce ora ripristina i metadati. Questo miglioramento delle funzionalità include ripristini a livello di organizzazione e ripristini granulari di singoli o più elementi per i metadati.</block>
+  <block id="f5cef6907f56b30e0f568a1ba8dd8f2e" category="paragraph">Ripristino dei metadati a livello di organizzazione</block>
+  <block id="c90fd64abafa6a46f787f3c5d2a82697" category="inline-image-macro">Opzione di ripristino dei metadati a livello di organizzazione ritagliata</block>
+  <block id="194772dce50f151295c8782ef852d585" category="paragraph"><block ref="194772dce50f151295c8782ef852d585" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f39f33a5c4e660b4e9d13008388cd18" category="paragraph">Ripristino dei metadati a livello granulare</block>
+  <block id="275b049bdb5283a4cbc6b7d319514c59" category="inline-image-macro">esportare e ripristinare le opzioni dei metadati</block>
+  <block id="d8b48bd6bc0099aa6f8730407bf10ba1" category="paragraph"><block ref="d8b48bd6bc0099aa6f8730407bf10ba1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8344e5256205a6eb6d53c776a87325a9" category="paragraph"><block ref="8344e5256205a6eb6d53c776a87325a9" category="inline-link-macro-rx"></block></block>
+  <block id="803cf6672bbd3102ed2d5b6d1938a8f8" category="list-text">Il *Riepilogo backup* è un miglioramento delle funzionalità di SaaS Backup per Salesforce che ti offre il numero totale di tutti i record creati, aggiornati ed eliminati. Consente di verificare che il numero dei record di backup corrisponda a quello del tuo account Salesforce.</block>
+  <block id="df9c8c38b260159798318d09259894b9" category="inline-link-macro">Visualizzazione dei record di backup</block>
+  <block id="671ebd011d9d70bc2e4334e7447fa464" category="paragraph"><block ref="671ebd011d9d70bc2e4334e7447fa464" category="inline-link-macro-rx"></block></block>
+  <block id="d4f4c40bd169a262676284f5da7a191a" category="section-title">Ottobre 2020</block>
+  <block id="f8c36fad2c56842660cbc3a68fb8f9d3" category="list-text">SaaS Backup per Salesforce ora esegue il backup dei metadati. Questo miglioramento della funzionalità include backup, ripristini a livello di oggetti e organizzazione e purge per i metadati creati. L'interfaccia utente dispone inoltre di una nuova scheda *tipi di metadati e componenti* in cui è possibile visualizzare i backup dei metadati. Queste pagine forniscono ulteriori informazioni su questa nuova funzione:</block>
+  <block id="c3cce180e4fc0d096e7953732ab79ebf" category="inline-link-macro">Attivazione e disattivazione dei metadati</block>
+  <block id="8e0e14c17d18e01aa7ed5cbbbb55c3f9" category="paragraph"><block ref="dd83261389a825b7a9968af2880949e6" category="inline-link-macro-rx"></block>
+<block ref="8344e5256205a6eb6d53c776a87325a9" category="inline-link-macro-rx"></block></block>
+  <block id="6aded561490e45bb631ebd13c1f2124e" category="list-text">A partire da ottobre 2020, è possibile eliminare i dati. I metadati vengono eliminati automaticamente dopo 90 giorni.</block>
+  <block id="f63e44f6b7c0301b6b1aee23f1f33f4c" category="inline-link-macro">Eliminazione di dati e metadati</block>
+  <block id="36e9a5fe1896ae34274e88633c34babe" category="paragraph"><block ref="f6727250bbfa913bef4e80906626d65b" category="inline-link-macro-rx"></block></block>
+  <block id="cf2dfa7ef96d78d1f3ec76316e1481d0" category="section-title">Febbraio 2020</block>
+  <block id="72b5a221286695b12b3b4f506b2d1145" category="paragraph">È ora possibile esportare i dati a livello di oggetto e organizzazione. Per ogni esportazione, è possibile scaricare allegati, risultati e statistiche da un backup precedente.<block ref="bd57f30b27e10897ea9932aca05fd4c5" category="inline-link-macro-rx"></block></block>
+  <block id="212304543059a60a8a3e21f0af1f0b73" category="summary">Puoi ottenere aiuto e trovare ulteriori informazioni nel forum della community NetApp SaaS Backup per Salesforce e negli articoli della Knowledge base.</block>
+  <block id="3cd12697cda279c9c99b093a265c1ba8" category="doc">Dove trovare assistenza e ulteriori informazioni</block>
+  <block id="f22c49ab181fc5052dc2afb2f7870c8a" category="paragraph">È possibile accedere a queste risorse all'interno di SaaS Backup attraverso il collegamento *Support* nel menu di navigazione.</block>
+  <block id="b24ecb506263a514c17f950224cec618" category="paragraph">Puoi anche inviare un'e-mail al team di supporto SaaS Backup all'indirizzo saasbackupsupport@netapp.com.</block>
+  <block id="21e1b756767837b952a974f265499c2c" category="summary">NetApp SaaS Backup per Salesforce è un servizio sicuro e nativo del cloud che esegue il backup dei dati Salesforce sullo storage Amazon S3. SaaS Backup aiuta a proteggere i tuoi dati da minacce o cancellazioni accidentali.</block>
+  <block id="7d83bbd7603ed5e1579ee52382edf594" category="doc">Panoramica di NetApp SaaS Backup per Salesforce</block>
+  <block id="1da10ef1876c10e5daed7941b10ea0e2" category="inline-image-macro">Panoramica grafica di SaaS Backup per Salesforce.</block>
+  <block id="b3989b22fa2007371aa8bc591d256386" category="paragraph"><block ref="c989eb06241e0885e541490ebf7d53ef" category="inline-image-macro-rx" type="image"></block>NOTA: Quando esegui l'aggiornamento dall'anteprima privata di SaaS Backup per Salesforce alla disponibilità generale del prodotto, i dati dell'anteprima privata non vengono conservati.</block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">qui</block>
+  <block id="68bc97430a8a7d4dd4a26bb743ac17d3" category="paragraph">Se sei interessato a SaaS Backup per Microsoft Office 365, puoi trovare la documentazione <block ref="0271f2d022fdc7f7aeab59d4e396f81d" category="inline-link-macro-rx"></block>.</block>
+  <block id="2ac6bc59b5b989538923d84e1ea514db" category="summary">Puoi utilizzare SaaS Backup per Salesforce per eseguire il backup dei dati.</block>
+  <block id="907ae2ca5325729883590ff7c02d41c5" category="doc">Esecuzione di un backup immediato</block>
+  <block id="ec282453c4e7aeb8e9175645fd052dde" category="paragraph">È possibile eseguire un backup immediato della propria istanza di produzione o sandbox in qualsiasi momento si ritenga necessario per la protezione dei dati.</block>
+  <block id="0ac04b08cb1d1c1bbcd624736d7a4a94" category="admonition">Per la versione di prova di SaaS Backup per Salesforce, puoi eseguire solo tre backup immediati al giorno.</block>
+  <block id="baf2a6acc7bf93d57a5241e55f47b451" category="list-text">Selezionare l'istanza corretta per cui si desidera eseguire il backup.</block>
+  <block id="3af0e2bdb62097f5bc1ca53f6a609c89" category="list-text">Fare clic sul numero sopra *ISTANZE PROTETTE*, se l'istanza di cui si desidera eseguire il backup è attualmente protetta da un criterio di backup.</block>
+  <block id="178b85ce455f76e1369759a5627661c1" category="list-text">Fare clic sul numero sopra *ISTANZE in sospeso*, se lo stato di backup dell'istanza di cui si desidera eseguire il backup è in sospeso,</block>
+  <block id="6e7c3936f9100e1566aebc841eb34e1a" category="list-text">Fare clic sul numero riportato sopra *ISTANZE NON PROTETTE*, se l'istanza di cui si desidera eseguire il backup non è attualmente protetta da un criterio di backup.</block>
+  <block id="b163a01243d4a9aa0d46c2d5b37c4ba1" category="list-text">Fare clic su *Backup Now*. Viene visualizzato un messaggio che indica che le organizzazioni selezionate sono state inserite nella coda di backup.</block>
+  <block id="8070fdc102d390da84f81bb4f3734ddc" category="doc">Annullamento di un lavoro</block>
+  <block id="fb946ac62826c08c09ffa9bd4bdf1e4a" category="list-text">Fare clic su *Jobs* nel riquadro di spostamento di sinistra.</block>
+  <block id="e638d1995e6647b2b7da636d46869bbb" category="list-text">In *Recent Running Jobs* (lavori in esecuzione recenti), individuare il lavoro che si desidera annullare.</block>
+  <block id="2188814b9661f9446f5934ae878cd88b" category="list-text">Fare clic su *Annulla*.</block>
+  <block id="7c991d005f914ce2a066331555da8416" category="summary">Puoi utilizzare SaaS Backup per Salesforce per confrontare e ripristinare i dati di cui hai precedentemente eseguito il backup.</block>
+  <block id="1a7742e5d7790095a7535e74039ce15a" category="doc">Confronto e ripristino delle differenze di backup</block>
+  <block id="820808359f2dba65062e92c4315c38fa" category="paragraph">Puoi utilizzare SaaS Backup per Salesforce per confrontare e ripristinare le differenze di backup.</block>
+  <block id="31fc218e2f94beef0d5cf31b25d2fac2" category="inline-image-macro">Pulsante lavori</block>
+  <block id="ea41c668598cccc6da061076c645b4db" category="list-text">Dal riquadro di navigazione a sinistra, fare clic su *Jobs*.<block ref="a00d6cf39db2b3fc74cfb953211c2a86" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="75166b4883200fab869e1b76dbf2b602" category="list-text">In *Recent Completed Jobs*, selezionare il backup contenente l'oggetto per cui si desidera confrontare i backup.</block>
+  <block id="8383a8832aa6447282829782c7c0cbf3" category="list-text">Fare clic sull'organizzazione.</block>
+  <block id="66c7ca2c96168b698ffe1cc97df2c5ac" category="list-text">Selezionare l'oggetto per il quale si desidera confrontare i backup.</block>
+  <block id="6483c07e7bd0bf50c6159055f0679aed" category="inline-image-macro">Schermata di con l'icona di confronto evidenziata</block>
+  <block id="bee515300b16fdfcec655223d5b847dc" category="list-text">Fare clic sull'icona di confronto.<block ref="dad1c62f0e14287d78bbe63b94250db4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46c21254a0427db73808f39459f6a611" category="list-text">Accanto a *Previous Backup* (Backup precedente), selezionare la prima data del backup che si desidera utilizzare per il confronto.</block>
+  <block id="fe01e7bd0e25e68dd603bdcc75a25fa7" category="list-text">Accanto a *Current Backup* (Backup corrente), selezionare la seconda data del backup che si desidera utilizzare per il confronto.</block>
+  <block id="0212382e69be16297c3177d7fea227cd" category="inline-image-macro">Pulsante compare (confronta)</block>
+  <block id="52baedaec06a2243840a1343b354b5ca" category="list-text">Fare clic su *CONFRONTA*.<block ref="1facb168eb1e82777f723c86c2b90e0c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5f8d413dad06f1029158fcfa150a3f78" category="admonition">Se non vi sono differenze tra i due backup selezionati, il processo di confronto non viene creato.</block>
+  <block id="c8314932e95d0cfda713487da83dae98" category="list-text">Fare clic su *Visualizza avanzamento lavori*.</block>
+  <block id="7afed2513cb9c27b585f7d93f0f68b92" category="paragraph">Una volta completato, il lavoro viene visualizzato in *Recent Completed Jobs* (lavori completati recenti).</block>
+  <block id="83dc371736db1ac195aad053d561c38b" category="inline-image-macro">Lavoro di confronto completato dove fare clic per i risultati</block>
+  <block id="aa4d211707926f12044ffc71609814ac" category="list-text">Fare clic sul numero di organizzazioni o sul numero riuscito.<block ref="1284ce252b6ec7d523482a1b4213623f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1ae9ef5f3282256d240fc7525491ac9" category="inline-image-macro">finestra dei risultati del confronto dei lavori</block>
+  <block id="6482d9b31f7e1a9aed3f4cd57adc82b0" category="paragraph">Viene visualizzata una finestra che mostra lo stato del lavoro.<block ref="9dde3bdc539a315079978dbf64e623c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="977d0f76b68dd473cff17a52cf4e7bf5" category="list-text">Fare clic sul nome dell'oggetto per visualizzare i risultati. Il riepilogo del processo di confronto viene visualizzato insieme al numero di record creati, aggiornati ed eliminati nell'oggetto tra i due backup selezionati. È possibile scaricare i dettagli del lavoro di confronto.</block>
+  <block id="ddf4da8212650068f68aa72b1deb4f6f" category="inline-image-macro">icona per il download dei risultati di confronto</block>
+  <block id="3899bf4f4dc2b334eb58a37faf722883" category="list-text">Per scaricare i dettagli del confronto, fare clic su <block ref="7d96c55ac97403a1d7df04d3d156e96b" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="1296121ea5618e39b0f71a0e2a9b6a55" category="list-text">Decomprimere il file per visualizzare i risultati.</block>
+  <block id="041f67ea175f97633aa134a06a5c1231" category="list-text">Fare clic su *RESTORE* (RIPRISTINA).</block>
+  <block id="218a6df2de43ccf996900a6139e11d59" category="list-text">Selezionare *UPDATED* per ripristinare tutti i record aggiornati. Selezionare *DELETED* per ripristinare tutti i record cancellati. È inoltre possibile selezionare entrambe le opzioni, se disponibili.</block>
+  <block id="bb033ba9af8ba2a48b881b33c9a548c7" category="list-text">Fare clic su *SUMBIT*.</block>
+  <block id="0b73755473135196fcafff58d661dea2" category="paragraph">Il lavoro viene ripristinato senza sovrascrittura e senza relazione.</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Note legali</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Copyright</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marchi</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, il logo NETAPP e i marchi elencati nella pagina dei marchi NetApp sono marchi di NetApp, Inc. Altri nomi di società e prodotti potrebbero essere marchi dei rispettivi proprietari.</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Brevetti</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Un elenco aggiornato dei brevetti di proprietà di NetApp è disponibile all'indirizzo:</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Direttiva sulla privacy</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open source</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.</block>
+  <block id="af482b62e5f593026c0e1f3b25e33b22" category="inline-link-macro">Avviso per SaaS Backup</block>
+  <block id="6adebe2fbffbd6dcb646696cd1bfc9ee" category="paragraph"><block ref="6adebe2fbffbd6dcb646696cd1bfc9ee" category="inline-link-macro-rx"></block></block>
+  <block id="1b40ff58039e24d9c191a06c581a74f2" category="summary">Benvenuto nel portale di documentazione di NetApp SaaS Backup per Salesforce.</block>
+  <block id="62a1bf19d63cf8abd2a45f03805b1a3a" category="doc">NetApp SaaS Backup per la documentazione di Salesforce</block>
+  <block id="2b10feb741fcf4da10b719c0abfc97b5" category="paragraph">NetApp SaaS Backup è un servizio sicuro e nativo del cloud che esegue il backup dei dati Salesforce sullo storage Amazon S3. SaaS Backup aiuta a proteggere i tuoi dati da minacce o cancellazioni accidentali.</block>
+  <block id="627c67f84ecdab26e8531fb4f26a3d7f" category="section-title">Gestire i backup e ripristinare i dati</block>
+  <block id="6fb2b97744d045afd98376f018b9f01d" category="list-text"><block ref="6fb2b97744d045afd98376f018b9f01d" category="inline-link-macro-rx"></block></block>
+  <block id="c96ecffde6280d2fa1507c88f273acb6" category="section-title">Fornisci feedback, ottieni aiuto o trova ulteriori informazioni</block>
+  <block id="03dd17d9bfb6ac47a56a2c201bab1690" category="inline-link-macro">Fornire un feedback</block>
+  <block id="5d103525a3377b97bd04e4e6de027e21" category="list-text"><block ref="5d103525a3377b97bd04e4e6de027e21" category="inline-link-macro-rx"></block></block>
+  <block id="60eb37087de824a31913cb25c89ee64d" category="list-text"><block ref="60eb37087de824a31913cb25c89ee64d" category="inline-link-macro-rx"></block></block>
+  <block id="f177479df190b09a1f0a4177a434f5e2" category="inline-link-macro">Documentazione per SaaS Backup per Microsoft Office 365</block>
+  <block id="2f885ebeca5bae9f7eaf0f5e91d94b45" category="list-text"><block ref="2f885ebeca5bae9f7eaf0f5e91d94b45" category="inline-link-macro-rx"></block></block>
+  <block id="5ed5c66aa1c9d72063f7a2f9f75a17d9" category="summary">Una volta protetti i dati in Sandbox o Production Instance, è possibile scegliere di spostarli in qualsiasi momento in un altro livello di backup.</block>
+  <block id="9d26c855a2d401584a2885908a0440b0" category="doc">Pianificazione di un backup o modifica della frequenza di backup</block>
+  <block id="bf7f5a76355a51d213b8e2aefe6448df" category="paragraph">Se si aggiunge un'istanza Sandbox in SaaS Backup per Salesforce, per impostazione predefinita, tutti i dati in Sandbox non sono protetti fino a quando non vengono spostati manualmente in un Tier di backup protetto. Una volta protetti i dati in Sandbox o Production Instance, è possibile scegliere in qualsiasi momento di spostarli in un altro livello di backup.</block>
+  <block id="9989c95c3053ade316ac50c74e9bf818" category="list-text">Nel riquadro di navigazione a sinistra, fare clic su *servizi*.</block>
+  <block id="5ba64ff8e229cabdd4607f87216788c3" category="paragraph"><block ref="5ba64ff8e229cabdd4607f87216788c3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="44917becc84255e65ad6fe93d451cc1b" category="list-text">Se si desidera spostare un'organizzazione nell'istanza di produzione, fare clic su *istanze di produzione*.</block>
+  <block id="a6f77429d7ea5df57df973d7d95bc5d0" category="paragraph"><block ref="ce00dffed0446e4163769bd4d24d0914" category="inline-image-macro-rx" type="image"></block>Se si desidera spostare un'organizzazione nell'istanza Sandbox, fare clic su *istanze Sandbox*.</block>
+  <block id="6327247e9a4189d75bc19c6623ed5709" category="paragraph"><block ref="6327247e9a4189d75bc19c6623ed5709" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2dd3092c0021650efb24806c99dcda40" category="list-text">Selezionare la categoria di istanza corretta per l'organizzazione che si desidera spostare.</block>
+  <block id="7670cfa6d9bbf678073477b4fcc99ece" category="list-text">Fare clic sul numero sopra *ISTANZE PROTETTE*, se l'organizzazione che si desidera spostare è attualmente protetta da una policy di backup.</block>
+  <block id="7ea477de966f01b087d683477ebe57f1" category="list-text">Fare clic sul numero sopra *ISTANZE in sospeso*, se lo stato del backup dell'organizzazione che si desidera spostare è in sospeso,</block>
+  <block id="49ba784e1afa2eaa7b52ddf742fd613c" category="list-text">Fare clic sul numero riportato sopra *ISTANZE NON PROTETTE*, se l'organizzazione che si desidera spostare non è attualmente protetta da un criterio di backup.</block>
+  <block id="b01a359c58f18a208adc0ca76cb7882d" category="list-text">Selezionare il nuovo livello. Per le istanze di Sandbox sono disponibili solo backup di Tier 2 e Tier 3. Non è possibile eseguire il backup delle istanze di sandbox in base al criterio di livello 1. Le istanze di produzione possono essere nel criterio di livello 1 o non protette. Non è possibile eseguire il backup delle istanze di produzione in base ai criteri di Tier 2 o Tier 3. L'organizzazione viene spostata nel nuovo Tier di backup.</block>
+  <block id="da19b7c2e291b2b5c0f2a8511e2d737a" category="summary">Fornisci un feedback che ci aiuti a servirti meglio.</block>
+  <block id="aa78677ae2b133ceae8bb92497a8c07f" category="paragraph">Il tuo feedback sul prodotto NetApp SaaS Backup per Salesforce ci aiuta a servirti meglio. Puoi fornire feedback da Inside SaaS Backup.</block>
+  <block id="b94bf479616c645e1d92893ad9ee316d" category="list-text">Fare clic su <block ref="745b42c40461b85675b54d346e429160" category="inline-image-macro-rx" type="image"></block> nel riquadro di navigazione a sinistra.</block>
+  <block id="1c841320f46ae6c1639dc5e080e3fbf3" category="list-text">Selezionare *Feedback*.</block>
+  <block id="63b9a8e49a30f185f4f2d726a08afb6d" category="list-text">Completa il breve sondaggio di feedback.</block>
+  <block id="6be364524b60c8ce2362d8a248ae8458" category="paragraph">Se si desidera ricevere una notifica automatica quando viene rilasciata la documentazione a livello di produzione o vengono apportate modifiche importanti ai documenti esistenti a livello di produzione, seguire l'account Twitter @NetAppDoc.</block>
+  <block id="3c94b1350efc6463906e845a2ff7d491" category="summary">Puoi eliminare i dati dalle organizzazioni Salesforce.</block>
+  <block id="ba148551a0c83efdb34b7d72ad2e3c41" category="paragraph">Puoi eliminare i dati dalle organizzazioni Salesforce. L'eliminazione dei dati a livello di organizzazione viene gestita in *Impostazioni account*.</block>
+  <block id="8ae4b4d870a75f00712197eb3ccd3115" category="paragraph">La conservazione e lo spurgo dei metadati vengono gestiti automaticamente da SaaS Backup per Salesforce. I metadati vengono conservati per 90 giorni. Dopo 90 giorni, i metadati vengono eliminati.</block>
+  <block id="84a81e8817ee1211f1116f3e258a2573" category="section-title">Eliminazione dei dati</block>
+  <block id="883019e162e0c4e0b900f1f94f06fefe" category="paragraph">Hai sempre la possibilità di eliminare i dati da un'organizzazione specifica, ad esempio un'organizzazione Salesforce inutilizzata.</block>
+  <block id="7021f5ee4da5c50a415a3247a8359eff" category="paragraph">È possibile eliminare i dati per aggiornare le istanze di produzione o sandbox.</block>
+  <block id="7d43d9444adcbf8ad8288805f4b4bad4" category="paragraph">È anche possibile aggiungere un'altra istanza di produzione o sandbox. A tale scopo, è necessario eliminare un'istanza di produzione o sandbox.</block>
+  <block id="92eef66d548ce3ad6566a41eb934f2c6" category="inline-image-macro">icona ingranaggio</block>
+  <block id="93aae2968df995f78e23eefab4b48ff2" category="inline-image-macro">impostazioni dell'account</block>
+  <block id="b92b1f2cfc798435ec4ef5c6c87baf7c" category="list-text">Fare clic su <block ref="89149122f375b234b8eecb4e23756acb" category="inline-image-macro-rx" type="image"></block> quindi fare clic su <block ref="58b1e22a3220385100ba59b71134b799" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="e07e5b3f855bd71b1e85f83acb5838d3" category="list-text">Fare clic su *Mantieni e Rimuovi*.</block>
+  <block id="b6c1f1556ca81bcb192508a855aed6ed" category="list-text">In *Mantieni e Rimuovi*, scorrere verso il basso fino a *Rimuovi dati*.</block>
+  <block id="75499a48a29cb620fe0f3e0c58884269" category="list-text">Selezionare *tipo di provider* e *Nome servizio*.</block>
+  <block id="a90988501f4f1fc09cca43a59ead1d95" category="list-text">Cercare o selezionare l'ID dell'organizzazione.</block>
+  <block id="3a7a2a0aea8e508b7ff5461b8e07d419" category="list-text">Fare clic su *Save* (Salva). Viene visualizzato un messaggio per confermare o annullare l'eliminazione.</block>
+  <block id="7f23b56fd4dedf5d74e995b97b9a5426" category="list-text">Fare clic su *Sì* per confermare l'eliminazione. Facendo clic su *Sì*, è possibile ripristinare i dati rimossi per un massimo di sette giorni.</block>
+  <block id="ad0bf7aa96dd40f32d3b2dca69c49df6" category="list-text">Fare clic su *Show Purged List* (Mostra elenco elementi rimossi) per visualizzare un elenco di elementi di eliminazione pianificati.</block>
+  <block id="f4a7061cca9ee27e82185f896b9e3729" category="inline-image-macro">esempio di lista eliminata</block>
+  <block id="f507635adae33a1f2928daca90683e32" category="paragraph"><block ref="f507635adae33a1f2928daca90683e32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c9fd4587b1eec68e886a539b71faf65" category="summary">È possibile scaricare il registro delle attività in un file .csv.</block>
+  <block id="38c3c04a063c42a8ca480029d7cad55f" category="doc">Download del registro delle attività in corso</block>
+  <block id="5d5bf6c891d643f8d91b1416c4836a4f" category="list-text">Dal riquadro di navigazione a sinistra, fare clic su *Reporting*.<block ref="6b1016787a1b640ac9aa842cfb3b4655" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="704629eb1f04f95f71dae30fee63dd7d" category="list-text">Fare clic su *Activity Log* (Registro attività).</block>
+  <block id="aad8a4ed987e820a5ab9d67a87197b53" category="list-text">Fare clic su *Download*.<block ref="affa188993e965a76789f349fc34b113" category="inline-image-macro-rx" type="image"></block>Il registro delle attività viene scaricato come file .csv.</block>
+  <block id="9f02509e5496e861df4c341dba05386e" category="doc">Policy di backup</block>
+  <block id="27c16bc2e8f217eeebbc4d328715771d" category="paragraph">SaaS Backup per Salesforce dispone di tre livelli predefiniti di policy di backup. Questi livelli di policy variano in base alla frequenza di backup e al periodo di conservazione dei dati. Le istanze di produzione possono essere protette solo dal criterio di livello 1. Le istanze di sandbox possono essere protette dai criteri di Tier 2 e Tier 3.</block>
+  <block id="fac12c85b62e78f119d552b6f9aa2451" category="paragraph">I criteri di backup con stato *attivo* sono criteri a cui sono stati assegnati elementi per il backup. I criteri di backup con stato *inattivo* non hanno elementi assegnati per il backup.</block>
+  <block id="7759a4720271a1ab3b4e6b1c36a67058" category="cell">Policy di backup</block>
+  <block id="4e92547e997fe98c132fd1cfb873bc65" category="cell">Frequenza di backup</block>
+  <block id="fd597450368b610e3110c7036f852ae9" category="cell">Periodo di conservazione dei dati predefinito</block>
+  <block id="fd72de49d13af6b0bdb18e11fd0383f5" category="cell">Disponibile per la protezione</block>
+  <block id="538a4400e894e9e5dbff6dcd6e9d6e17" category="cell">Tier 1</block>
+  <block id="82875668baf626071ef9cf3c751ec69c" category="cell">Una volta ogni 12 ore</block>
+  <block id="89ee81dad12fa06ec6a5b8461129cdd0" category="cell">3 anni</block>
+  <block id="442d53a01a3bee5e6238f5340bd310ed" category="cell">Istanza di produzione</block>
+  <block id="3e335d546de3fa7d51e6942ccc8339b7" category="cell">Tier 2</block>
+  <block id="585a8bd659fa917cebfb861f91e2e30b" category="cell">Una volta ogni 18 ore</block>
+  <block id="da7e60c600159e2ccabbfea4d6a2c242" category="cell">2 anni</block>
+  <block id="4a78027bac8863cdd27fa44267c804be" category="cell">Istanza sandbox</block>
+  <block id="83ee9728e65dff5bbbf6297550157b9e" category="cell">Tier 3</block>
+  <block id="81ab7d159caeeff3fad2829d4a3d72bd" category="cell">Una volta ogni 24 ore</block>
+  <block id="ab254afc26016555fc58a2fbf20c0c73" category="cell">Non protetto</block>
+  <block id="32771279cda84268b560695103314e6a" category="cell">Backup non eseguito</block>
+  <block id="40350e4eafc364700da8aea489f2ef8d" category="cell">Istanze di produzione e Sandbox</block>
+  <block id="0cab6849e5d7af24b1ddfe269c63c898" category="summary">Puoi visualizzare un elenco di tutte le attività eseguite all'interno di SaaS Backup per Salesforce.</block>
+  <block id="4637fa9876f47993b8689ad910800aa5" category="doc">Visualizzazione del registro delle attività</block>
+  <block id="042a66ec052ba0fe36624b3150dca983" category="list-text">Per filtrare i risultati, fare clic su *Filter* (filtro).<block ref="211b6fa5ec0b2e438f477c61db04599c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a6fbc4d6a3101b98aea503a9a297c7fd" category="list-text">Selezionare il filtro che si desidera utilizzare per perfezionare i risultati del report. È possibile filtrare in base al servizio o all'evento.<block ref="6c5989be31be629d7812e5ee160eae95" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3d9515781b0efbc8727dcb8059e9548" category="list-text">Fare clic nella casella *Search* e selezionare il servizio o l'evento specifico per il quale si desidera visualizzare i risultati. Aggiungere altri filtri in base alle necessità.</block>
+  <block id="5bc78b1267d6eec17e7aaa5b202fecff" category="list-text">Fare clic su *Applica filtro*.</block>
+  <block id="d703cfe8f00733a4a1e84640b833af26" category="summary">Puoi attivare o disattivare i backup dei metadati per Salesforce.</block>
+  <block id="35fd26aa5bb4717a9cedd4f8e6485946" category="doc">Attivazione e disattivazione dei backup dei metadati</block>
+  <block id="1cf52111c6baba45076ba1fc4312422d" category="section-title">Attivazione dei backup dei metadati</block>
+  <block id="c47230d121fb1df4832e6b65fd99a784" category="paragraph">L'attivazione dei backup dei metadati fornisce backup dei metadati per tutte le organizzazioni all'interno di un account tenant.</block>
+  <block id="e93e28976828b8a55b7160afd23d7bc8" category="list-text">Fare clic su <block ref="89149122f375b234b8eecb4e23756acb" category="inline-image-macro-rx" type="image"></block> E seleziona *Salesforce* in *Services Settings*.</block>
+  <block id="3249ebaceb7ef786e61cefc913291d16" category="inline-image-macro">impostazioni di salesforce</block>
+  <block id="d9ecdf140b442d60d0563653e34969cb" category="paragraph"><block ref="d9ecdf140b442d60d0563653e34969cb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78d72fce1a13c80af469d3e8900feff5" category="list-text">Fare clic su *Enable Metadata Backup* (attiva backup metadati) per attivare la funzione. Dopo l'attivazione a livello di tenant, verrà eseguito il backup dei metadati di tutte le organizzazioni.</block>
+  <block id="dc0da323f67e851ecfa2c3478bb5b18f" category="section-title">Disattivazione dei backup dei metadati</block>
+  <block id="5555eb9c4e6aefb5c8b787f5a9fa1d6f" category="paragraph">È possibile disattivare i backup dei metadati a livello di organizzazione. Una volta attivati i backup dei metadati per tutte le organizzazioni, è possibile controllare quali organizzazioni non dispongono di backup dei metadati.</block>
+  <block id="2eec5d43f26cf86ac573e1c057227e1b" category="list-text">Per disattivare i backup dei metadati, accedere a *servizi*.</block>
+  <block id="da396169287a2765cffcc450d7b061c2" category="list-text">Selezionare il numero di istanze *protette*.</block>
+  <block id="5ce2c87c0e941acdc3c6cc1198f886b2" category="list-text">Selezionare l'organizzazione per cui si desidera disattivare i backup dei metadati.</block>
+  <block id="789a5df7406fcd45b3b8c623e69ee6b6" category="list-text">Fare clic su *Metadata Backup* per disattivare la funzione.</block>
+  <block id="8654b0089318be3208f78ed1708315ab" category="inline-image-macro">disattiva il backup dei metadati</block>
+  <block id="ce4e3b64b2712f7097688a51e5696aa1" category="paragraph"><block ref="ce4e3b64b2712f7097688a51e5696aa1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b635c1cbbe90272a791773937e55c29c" category="summary">È necessario conoscere alcuni problemi e limitazioni noti di SaaS Backup.</block>
+  <block id="2813f127dc58929fb553bc32684c2e46" category="doc">Problemi e limitazioni noti</block>
+  <block id="1cdecf8cfc1c680f3e5e3642e1b1fd43" category="paragraph">Di seguito è riportato un elenco di problemi e limitazioni noti di SaaS Backup per Salesforce.</block>
+  <block id="bcbe7b698dad6ff6a72028e11afa90aa" category="section-title">Record mancanti nel backup di alcuni oggetti (difetto n. 1169)</block>
+  <block id="34e7cb432db22480f65a063929e225e2" category="paragraph">Dopo un backup completo o incrementale di un'organizzazione, potrebbe esserci una piccola discrepanza nel conteggio per il numero totale di record rilevati rispetto al conteggio per il numero totale di record scaricati. Ciò si verifica quando vengono aggiunti campi specifici alla query e, di conseguenza, l'API di Salesforce non restituisce tutti i record.</block>
+  <block id="2653e3e49fa97388779832c8af053cec" category="section-title">Il ripristino dei record di cui è stato eseguito il backup prima della modifica dello schema non è supportato (difetto n. 1170)</block>
+  <block id="a15bfe79557278c017909f47b59e0d64" category="paragraph">SaaS Backup non supporta il ripristino dei record di cui è stato eseguito il backup prima di una modifica dello schema. Se si tenta di eseguire questa operazione, il ripristino non riesce e viene visualizzato il seguente messaggio: *Ripristino non riuscito a causa di modifiche dello schema*.</block>
+  <block id="a6f5535ec20d130daac0bd5ec509db7c" category="section-title">Oggetti esclusi dai backup</block>
+  <block id="8c64a71891153a9044c41898cc9cb9cd" category="paragraph">Il backup SaaS per Salesforce non esegue il backup dei seguenti oggetti:</block>
+  <block id="0654fbcec674157df483b1293a9bceea" category="list-text">Oggetti che non possono essere interrogati utilizzando le API di Salesforce</block>
+  <block id="63f27138bf19636252411401243db2fd" category="list-text">Oggetti che non supportano query generiche</block>
+  <block id="65f07e44478dfa04f0e3d9ab9a398cee" category="list-text">Oggetti cronologia utilizzati da Salesforce per tenere traccia della cronologia delle modifiche a livello di campo dei record negli oggetti.</block>
+  <block id="4ba5aba2f15e022368bed007b15bb804" category="section-title">Funzioni non supportate nell'anteprima privata</block>
+  <block id="85af39b96311c97edcf9348cd1cbdf7f" category="paragraph">Le seguenti funzionalità non sono supportate nella versione di anteprima privata di SaaS Backup per Salesforce.</block>
+  <block id="0d5d92a314cfe815158ebde328728841" category="list-text">Chiacchiera di Salesforce</block>
+  <block id="a5550f858c0ad50e9beb0ecc5a553a9b" category="list-text">I seguenti tipi di relazione</block>
+  <block id="b2225ba3ad6563c0a702e4d5fe2d3128" category="list-text">Relazioni da N:1 a N:N.</block>
+  <block id="251cabae8c7cde1462b09cba3bfed1a8" category="list-text">Rapporti di sé</block>
+  <block id="2113d8dd22a7718f7f7ed338d5148268" category="list-text">Relazioni cicliche</block>
+  <block id="209476490c885c2badf49d7123040a54" category="summary">In SaaS Backup per Salesforce, puoi controllare il numero dei tuoi record di backup in SaaS Backup per Salesforce.</block>
+  <block id="90c59962b478cc16e8bbb360ee351081" category="paragraph">Puoi controllare il numero dei tuoi record di backup in SaaS Backup per Salesforce.</block>
+  <block id="54313281b51c132f6d706ed0ba222d91" category="paragraph">Il primo backup completo fornisce il numero totale di record di backup a livello di organizzazione. Dopo questo primo backup, è possibile visualizzare il numero totale di record creati, aggiornati ed eliminati dal *Riepilogo backup*.</block>
+  <block id="c2c1492bb3caa6fd5459c27eab83a361" category="list-text">Dalla dashboard, fare clic sul numero di istanze protette (produzione o sandbox).</block>
+  <block id="e36da5e56af3a71f7dde2ebc52d0cad9" category="list-text">Fare clic su *view* sotto *Backup Summary*.</block>
+  <block id="5d908cc9bac27394b0aa4bcfdd4867c3" category="inline-image-macro">visualizzare il riepilogo del backup</block>
+  <block id="c561979329d0dd8fcf91a1c1caab9e88" category="paragraph"><block ref="c561979329d0dd8fcf91a1c1caab9e88" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3667f9b3b8f56949933698aea82c21bf" category="list-text">Visualizzare il numero di record creati ed eliminati e il numero di record di tutte le modifiche apportate alla tabella.</block>
+  <block id="a6bfb3846b4d5e45699c4f029100c64c" category="inline-image-macro">Numero di record di backup</block>
+  <block id="c8c515138f951c36d068ebeafa1734f6" category="paragraph"><block ref="c8c515138f951c36d068ebeafa1734f6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f387e96d5a789dc7edfa831b4d2663ef" category="list-text">*Nome oggetto* - include tutti gli oggetti dell'organizzazione.</block>
+  <block id="4868f3e999004cc4a1f815b936550442" category="list-text">*Creato* - tutti i record creati e aggiornati.</block>
+  <block id="7ca34ffb471a3bae498a369e79baf5c1" category="list-text">*Cancellato* - tutti i record cancellati.</block>
+  <block id="7cb9ad8121e71cfb54fc1dfc96885b1e" category="list-text">*Conteggio record* - numero totale di modifiche di backup per un oggetto.</block>
+  <block id="f77373d8dbe5ffc4ac811634d33a4576" category="summary">Puoi visualizzare un elenco di tutti i lavori completati, annullati o non riusciti in SaaS Backup per Salesforce.</block>
+  <block id="36a369f196cf70137545e71a87a40978" category="doc">Visualizzazione della cronologia dei lavori</block>
+  <block id="eb5443b44bfe58eaf78c1d584a6a537d" category="list-text">Dal riquadro di navigazione a sinistra, fare clic su *Reporting*.<block ref="6b1016787a1b640ac9aa842cfb3b4655" category="inline-image-macro-rx" type="image"></block>Viene visualizzata la cronologia dei lavori.</block>
+  <block id="c91d53cb367baea6f91c3c6f9ba12b49" category="list-text">Nell'angolo in alto a destra, fare clic su *Filter* (filtro).<block ref="211b6fa5ec0b2e438f477c61db04599c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="85f8ceb73a1807587f30f99baa144ee8" category="list-text">Selezionare il filtro che si desidera utilizzare per perfezionare i risultati del report. È possibile filtrare in base alla policy di backup, al servizio o al tipo di lavoro.</block>
+  <block id="db66ae1903eff3f8128a43125b9609a9" category="list-text">Fare clic nella casella *Cerca* e selezionare la policy, il servizio o il tipo di lavoro di backup specifico per cui si desidera visualizzare i risultati. Aggiungere altri filtri in base alle necessità.<block ref="dfc523264beb960509594f07107a5f20" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bfb77f116f394c7d1254e3a686773c5c" category="sidebar">Documenti di NetApp SaaS Backup per Salesforce</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Note di rilascio</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Panoramica</block>
+  <block id="712a1ac5f9f29147f308f24ea81ba27f" category="sidebar">Gestisci SaaS Backup per Salesforce</block>
+  <block id="91434d2ec1694706c5f6880d6fada769" category="sidebar">Visualizzare i dati</block>
+  <block id="1ae8a55f317d3b2570e79a0b4a668040" category="sidebar">Fornire un feedback</block>
+  <block id="d648f2a68a54fd1b3329efc3cf24d29c" category="sidebar">Note legali</block>
+</blocks>

@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task_purging_data_&_metadata.html 
+keywords: netapp, saas backup, salesforce, sandbox, production, instance, purge, purging, purging data, metadata, retention, metadata retention, retain and purge, show purged list 
+summary: Puoi eliminare i dati dalle organizzazioni Salesforce. 
+---
+= Eliminazione di dati e metadati
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puoi eliminare i dati dalle organizzazioni Salesforce. L'eliminazione dei dati a livello di organizzazione viene gestita in *Impostazioni account*.
+
+La conservazione e lo spurgo dei metadati vengono gestiti automaticamente da SaaS Backup per Salesforce. I metadati vengono conservati per 90 giorni. Dopo 90 giorni, i metadati vengono eliminati.
+
+
+
+== Eliminazione dei dati
+
+Hai sempre la possibilità di eliminare i dati da un'organizzazione specifica, ad esempio un'organizzazione Salesforce inutilizzata.
+
+È possibile eliminare i dati per aggiornare le istanze di produzione o sandbox.
+
+È anche possibile aggiungere un'altra istanza di produzione o sandbox. A tale scopo, è necessario eliminare un'istanza di produzione o sandbox.
+
+.Fasi
+. Fare clic su image:icon_gear.gif["icona ingranaggio"] quindi fare clic su image:account_settings.gif["impostazioni dell'account"].
+. Fare clic su *Mantieni e Rimuovi*.
+. In *Mantieni e Rimuovi*, scorrere verso il basso fino a *Rimuovi dati*.
+. Selezionare *tipo di provider* e *Nome servizio*.
+. Cercare o selezionare l'ID dell'organizzazione.
+. Fare clic su *Save* (Salva). Viene visualizzato un messaggio per confermare o annullare l'eliminazione.
+. Fare clic su *Sì* per confermare l'eliminazione. Facendo clic su *Sì*, è possibile ripristinare i dati rimossi per un massimo di sette giorni.
+. Fare clic su *Show Purged List* (Mostra elenco elementi rimossi) per visualizzare un elenco di elementi di eliminazione pianificati.
++
+image:purged_list_example.gif["esempio di lista eliminata"]
+
+

@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: concept_kpls.html 
+keywords: netapp, saas backup, salesforce, known, problems, limitations, release, notes 
+summary: È necessario conoscere alcuni problemi e limitazioni noti di SaaS Backup. 
+---
+= Problemi e limitazioni noti
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Di seguito è riportato un elenco di problemi e limitazioni noti di SaaS Backup per Salesforce.
+
+
+
+== Record mancanti nel backup di alcuni oggetti (difetto n. 1169)
+
+Dopo un backup completo o incrementale di un'organizzazione, potrebbe esserci una piccola discrepanza nel conteggio per il numero totale di record rilevati rispetto al conteggio per il numero totale di record scaricati. Ciò si verifica quando vengono aggiunti campi specifici alla query e, di conseguenza, l'API di Salesforce non restituisce tutti i record.
+
+
+
+== Il ripristino dei record di cui è stato eseguito il backup prima della modifica dello schema non è supportato (difetto n. 1170)
+
+SaaS Backup non supporta il ripristino dei record di cui è stato eseguito il backup prima di una modifica dello schema. Se si tenta di eseguire questa operazione, il ripristino non riesce e viene visualizzato il seguente messaggio: *Ripristino non riuscito a causa di modifiche dello schema*.
+
+
+
+== Oggetti esclusi dai backup
+
+Il backup SaaS per Salesforce non esegue il backup dei seguenti oggetti:
+
+* Oggetti che non possono essere interrogati utilizzando le API di Salesforce
+* Oggetti che non supportano query generiche
+* Oggetti cronologia utilizzati da Salesforce per tenere traccia della cronologia delle modifiche a livello di campo dei record negli oggetti.
+
+
+
+
+== Funzioni non supportate nell'anteprima privata
+
+Le seguenti funzionalità non sono supportate nella versione di anteprima privata di SaaS Backup per Salesforce.
+
+* Chiacchiera di Salesforce
+* I seguenti tipi di relazione
++
+** Relazioni da N:1 a N:N.
+** Rapporti di sé
+** Relazioni cicliche
+
+
+

@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: reference_legal_notices.html 
+keywords: copyrights, notice, trademarks, patents, privacy 
+summary: 'Le note legali forniscono l"accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.' 
+---
+= Note legali
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.
+
+
+toc::[]
+
+
+== Copyright
+
+http://www.netapp.com/us/legal/copyright.aspx[]
+
+
+
+== Marchi
+
+NETAPP, il logo NETAPP e i marchi elencati nella pagina dei marchi NetApp sono marchi di NetApp, Inc. Altri nomi di società e prodotti potrebbero essere marchi dei rispettivi proprietari.
+
+http://www.netapp.com/us/legal/netapptmlist.aspx[]
+
+
+
+== Brevetti
+
+Un elenco aggiornato dei brevetti di proprietà di NetApp è disponibile all'indirizzo:
+
+https://www.netapp.com/us/media/patents-page.pdf[]
+
+
+
+== Direttiva sulla privacy
+
+https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
+
+
+
+== Open source
+
+I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.
+
+link:media/SaaS_Backup_notice.pdf["Avviso per SaaS Backup"^]

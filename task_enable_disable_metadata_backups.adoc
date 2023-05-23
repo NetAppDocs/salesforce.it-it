@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task_enable_disable_metadata_backups.html 
+keywords: netapp, saas backup, salesforce, enable, enabling, disable, disabling, backup, backups, metadata, metadata backups 
+summary: Puoi attivare o disattivare i backup dei metadati per Salesforce. 
+---
+= Attivazione e disattivazione dei backup dei metadati
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puoi attivare o disattivare i backup dei metadati per Salesforce.
+
+
+
+== Attivazione dei backup dei metadati
+
+L'attivazione dei backup dei metadati fornisce backup dei metadati per tutte le organizzazioni all'interno di un account tenant.
+
+.Fasi
+. Fare clic su image:icon_gear.gif["icona ingranaggio"] E seleziona *Salesforce* in *Services Settings*.
++
+image:select_salesforce_settings.gif["impostazioni di salesforce"]
+
+. Fare clic su *Enable Metadata Backup* (attiva backup metadati) per attivare la funzione. Dopo l'attivazione a livello di tenant, verrà eseguito il backup dei metadati di tutte le organizzazioni.
+
+
+
+
+== Disattivazione dei backup dei metadati
+
+È possibile disattivare i backup dei metadati a livello di organizzazione. Una volta attivati i backup dei metadati per tutte le organizzazioni, è possibile controllare quali organizzazioni non dispongono di backup dei metadati.
+
+.Fasi
+. Per disattivare i backup dei metadati, accedere a *servizi*.
+. Selezionare *istanze di produzione* o *istanze sandbox*.
+. Selezionare il numero di istanze *protette*.
+. Selezionare l'organizzazione per cui si desidera disattivare i backup dei metadati.
+. Fare clic su *Metadata Backup* per disattivare la funzione.
++
+image:disable_metadata_backup.gif["disattiva il backup dei metadati"]
+
+

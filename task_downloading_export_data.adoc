@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_export_data.html 
+keywords: netapp, saas backup, salesforce, viewing, downloading, export, data 
+summary: È possibile scaricare allegati, risultati e statistiche utilizzando la funzione di esportazione nei dati. 
+---
+= Download dei dati di esportazione in corso
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile esportare i dati a livello di oggetto e organizzazione. Per ogni esportazione, è possibile scaricare allegati, risultati e statistiche da un backup precedente.
+
+
+
+== Esportazione a livello di oggetto
+
+.Fasi
+. Nel riquadro di navigazione a sinistra, fare clic su *servizi*.image:services.jpg[""]
+. Fare clic su *istanze di produzione* o *istanze sandbox*.image:production_instances.gif["L'immagine mostra la casella istanze di produzione"]
+image:sandbox_instances.gif["L'immagine mostra la casella istanze sandbox"]
+. Fare clic sul numero di *istanze protette*.image:protected_instances_screenshot.gif["L'immagine mostra le istanze protette"]
+. Fare clic sul nome dell'organizzazione.image:organization.jpg["L'immagine mostra dove fare clic sul nome dell'organizzazione"]
+. Selezionare gli oggetti da esportare e fare clic su *Restore* (Ripristina).image:restore.jpg["L'immagine mostra il pulsante di ripristino"]
+. Se necessario, selezionare *Ripristina relazioni* o *Ripristina file/allegati* per includerli nell'esportazione.
++
+
+NOTE: Se si seleziona *Ripristina relazioni*, il lavoro esporta l'oggetto selezionato e tutti i relativi oggetti di relazione. Se non si seleziona *Ripristina relazioni*, il lavoro esporta solo gli oggetti selezionati.
+
+. Fare clic su *Invia*.
+. Fare clic su *Jobs* nella navigazione a sinistra per visualizzare il processo di ripristino.
+. Fare clic su *Total Objects* o *Successful* per visualizzare i dettagli del lavoro e le opzioni di download.
++
+.. Per i lavori di esportazione con *Restore Files/Attachments*, sono disponibili tre opzioni di download:
++
+... Per i risultati, fare clic su image:export_data_download_link.gif["L'immagine mostra il pulsante di collegamento per il download dei dati di esportazione"].
++
+.... Nel Finder, individuare il file .tar.gz scaricato.
+.... Decomprimere il file per ottenere un file .tar.
+.... Estrarre il file .tar per visualizzare i risultati DI EXCEL.
+
+
+... Per gli allegati, fare clic su image:attachments_download_link.gif["L'immagine mostra il collegamento per il download degli allegati"].
++
+.... Nel Finder, individuare il file .tar.gz scaricato.
+.... Decomprimere il file per ottenere un file .tar.
+.... Estrarre il file .tar per visualizzare gli allegati.
+
+
+... Per visualizzare un report delle statistiche, fare clic su image:download.gif["L'immagine mostra il link per il download"].
+
+
+.. Per i lavori di esportazione senza *Ripristina file/allegati*, sono disponibili due opzioni di download:
++
+... Per i risultati, fare clic su image:export_data_download_link.gif["L'immagine mostra il link per il download dei dati di esportazione"].
+... Per visualizzare un report delle statistiche, fare clic su image:download.gif["L'immagine mostra il link per il download"].
+
+
+
+
+
+
+
+
+== Esportazione a livello di organizzazione
+
+.Fasi
+. Nel riquadro di navigazione a sinistra, fare clic su *servizi*.image:services.jpg[""]
+. Fare clic su *istanze di produzione* o *istanze sandbox*.image:production_instances.gif["L'immagine mostra la casella istanze di produzione"]
+image:sandbox_instances.gif["L'immagine mostra la casella istanze sandbox"]
+. Fare clic sul numero di *istanze protette*.image:protected_instances_screenshot.gif["L'immagine mostra le istanze protette"]
+. Selezionare il *Tier*.image:tier_selection.gif["L'immagine mostra il menu a discesa del livello"]
+. Fare clic su *Restore* (Ripristina), quindi su *Export Data* (Esporta dati).image:restore_export_data.gif["L'immagine mostra l'elenco a discesa di ripristino con l'opzione di esportazione"]
+. Se necessario, fare clic su *Restore Files/Attachments* (Ripristina file/allegati) per includerli nell'esportazione.
+. Fare clic su *Invia*.
+. Fare clic su *Jobs* nella navigazione a sinistra per visualizzare il processo di ripristino.
+. Fare clic su *Total Organizations* o *Successful* per visualizzare i dettagli del lavoro e le opzioni di download.
++
+.. Per i lavori di esportazione con *Restore Files/Attachments*, sono disponibili tre opzioni di download:
++
+... Per i risultati, fare clic su image:export_data_download_link.gif["L'immagine mostra il pulsante di collegamento per il download dei dati di esportazione"].
++
+.... Nel Finder, individuare il file .tar.gz scaricato.
+.... Decomprimere il file per ottenere un file .tar.
+.... Estrarre il file .tar per visualizzare i risultati DI EXCEL.
+
+
+... Per gli allegati, fare clic su image:attachments_download_link.gif["L'immagine mostra il collegamento per il download degli allegati"].
++
+.... Nel Finder, individuare il file .tar.gz scaricato.
+.... Decomprimere il file per ottenere un file .tar.
+.... Estrarre il file .tar per visualizzare gli allegati.
+
+
+... Per visualizzare un report delle statistiche, fare clic su image:download.gif["L'immagine mostra il link per il download"].
+
+
+.. Per i lavori di esportazione senza *Ripristina file/allegati*, sono disponibili due opzioni di download:
++
+... Per i risultati, fare clic su image:export_data_download_link.gif["L'immagine mostra il link per il download dei dati di esportazione"].
+... Per visualizzare un report delle statistiche, fare clic su image:download.gif["L'immagine mostra il link per il download"].
+
+
+
+
+

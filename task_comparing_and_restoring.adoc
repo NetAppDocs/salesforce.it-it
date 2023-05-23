@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task_comparing_restoring.html 
+keywords: netapp, saas backup, salesforce, managing, restores, comparing, restoring, recent, previous, backup, compare, comparison 
+summary: Puoi utilizzare SaaS Backup per Salesforce per confrontare e ripristinare i dati di cui hai precedentemente eseguito il backup. 
+---
+= Confronto e ripristino delle differenze di backup
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puoi utilizzare SaaS Backup per Salesforce per confrontare e ripristinare le differenze di backup.
+
+.Fasi
+. Dal riquadro di navigazione a sinistra, fare clic su *Jobs*.image:jobs.jpg["Pulsante lavori"]
+. In *Recent Completed Jobs*, selezionare il backup contenente l'oggetto per cui si desidera confrontare i backup.
+. Fare clic sull'organizzazione.
+. Selezionare l'oggetto per il quale si desidera confrontare i backup.
+. Fare clic sull'icona di confronto.image:compare_icon.jpg["Schermata di con l'icona di confronto evidenziata"]
+. Accanto a *Previous Backup* (Backup precedente), selezionare la prima data del backup che si desidera utilizzare per il confronto.
+. Accanto a *Current Backup* (Backup corrente), selezionare la seconda data del backup che si desidera utilizzare per il confronto.
+. Fare clic su *CONFRONTA*.image:compare.jpg["Pulsante compare (confronta)"]
++
+
+NOTE: Se non vi sono differenze tra i due backup selezionati, il processo di confronto non viene creato.
+
+. Fare clic su *Visualizza avanzamento lavori*.
++
+Una volta completato, il lavoro viene visualizzato in *Recent Completed Jobs* (lavori completati recenti).
+
+. Fare clic sul numero di organizzazioni o sul numero riuscito.image:completed_compare_job_click_arrow.gif["Lavoro di confronto completato dove fare clic per i risultati"]
++
+Viene visualizzata una finestra che mostra lo stato del lavoro.image:compare_job_results_window_arrow.gif["finestra dei risultati del confronto dei lavori"]
+
+. Fare clic sul nome dell'oggetto per visualizzare i risultati. Il riepilogo del processo di confronto viene visualizzato insieme al numero di record creati, aggiornati ed eliminati nell'oggetto tra i due backup selezionati. È possibile scaricare i dettagli del lavoro di confronto.
++
+.. Per scaricare i dettagli del confronto, fare clic su image:download_compare_results.gif["icona per il download dei risultati di confronto"].
+.. Decomprimere il file per visualizzare i risultati.
+
+
+. Fare clic su *RESTORE* (RIPRISTINA).
+. Selezionare *UPDATED* per ripristinare tutti i record aggiornati. Selezionare *DELETED* per ripristinare tutti i record cancellati. È inoltre possibile selezionare entrambe le opzioni, se disponibili.
+. Fare clic su *SUMBIT*.
++
+Il lavoro viene ripristinato senza sovrascrittura e senza relazione.
+
+

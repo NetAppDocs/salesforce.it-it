@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task_reauthenticating.html 
+keywords: netapp, saas backup, reauthenticating, reauthentication, tokens, refresh, expired, access 
+summary: È possibile annullare un backup o un ripristino immediato. Non è possibile annullare un backup pianificato. 
+---
+= Riautenticazione in corso
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Salesforce consente l'utilizzo di un massimo di 5 token prima che tu debba autenticare nuovamente le tue credenziali. Se si tenta di avviare un backup o un ripristino e tutti i token sono stati utilizzati, viene visualizzato il seguente messaggio di errore: "Token di accesso/refresh scaduto". Se si riceve questo messaggio, è necessario eseguire nuovamente l'autenticazione prima di procedere.
+
+
+toc::[]
+.Fasi
+. Nell'angolo in alto a sinistra della dashboard, fare clic su image:configure_icon.jpg["Icona delle impostazioni"].
+. In *SERVICE SETTINGS* (IMPOSTAZIONI SERVIZIO), selezionare *Salesforce*.
+. FARE CLIC SU *GRANT ACCESS PERMISSIONS*.
++
+image:grant_access_permissions.jpg["Icona Grant Access Permissions"]
+
+. Fare clic sulla scheda *PRODUZIONE* o *SANDBOX* per selezionare l'istanza da autenticare nuovamente.
+. Fare clic su image:re_authenticate.jpg["Icona di riautenticazione"].
++
+Verrai reindirizzato a *Salesforce* per inserire le tue credenziali. Dopo la riautenticazione, è possibile avviare il processo di backup o ripristino.
+
+

@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: task_managing_restores.html 
+keywords: netapp, saas backup, salesforce, managing, data, metadata, restore, restores, restoring, recent, previous, backup, compare, comparison 
+summary: Puoi utilizzare SaaS Backup per Salesforce per ripristinare i dati di cui hai precedentemente eseguito il backup. 
+---
+= Ripristino dei dati
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Puoi utilizzare SaaS Backup per Salesforce per ripristinare i dati e i metadati di cui hai precedentemente eseguito il backup.
+
+
+
+== Ripristino del backup più recente
+
+.Fasi
+. Nel riquadro di navigazione a sinistra, fare clic su *servizi*.image:services.jpg[""]
+. Fare clic su *istanze di produzione* o *istanze sandbox*.image:production_instances.gif[""]
+image:sandbox_instances.gif[""]
+. Fare clic sul numero di *istanze protette*.
+. Fare clic sul nome dell'organizzazione.image:organization.jpg[""]Viene visualizzato un elenco di oggetti. Gli oggetti ripristinabili vengono visualizzati per impostazione predefinita. Per visualizzare gli oggetti non ripristinabili, selezionare "Includi oggetti non ripristinabili". Gli oggetti non ripristinabili sono indicati da un'icona grigia. L'icona rossa rappresenta gli oggetti ITEMS di cui non è stato possibile eseguire il backup nel backup corrente, ma che possono essere ripristinati dai backup precedenti.
+
+
+|===
+
+
+| Oggetto ripristinabile | image:recoverable_item.jpg[""] 
+
+
+| Oggetto non ripristinabile | image:nonrecoverable_item.jpg[""] 
+
+
+| Oggetto non riuscito | image:failed_item.jpg[""] 
+|===
+. Fare clic sull'oggetto contenente i singoli record che si desidera ripristinare, quindi cercare il record specifico.
+. Fare clic su *Restore* (Ripristina).image:restore.jpg[""]
+. Selezionare le opzioni di ripristino.
++
+.. Per impostazione predefinita, viene selezionato il comando Ripristina con sovrascrittura*. Questa opzione sostituisce la versione esistente del record che si sta ripristinando. Se si desidera mantenere la versione corrente del record e la versione ripristinata del record, deselezionare questa opzione.
+.. *Restore Relationship* ripristina i figli dei record padre insieme al padre fino a cinque livelli. Se non si seleziona per ripristinare la relazione, viene ripristinato solo il record principale.
+.. *Esporta dati* consente di esportare i dati da un backup in un momento specifico. È possibile esportare i dati a livello di oggetto o di organizzazione. Per ulteriori informazioni sulla funzione di esportazione dei dati, visitare il sito Web all'indirizzo link:task_downloading_export_data.html["Download dei dati di esportazione in corso"].
++
+
+NOTE: I lavori di esportazione sono disponibili solo per sette giorni dopo il completamento.
+
+
+
+. Fare clic su *Invia*.image:submit.jpg[""]
+
+
+
+
+== Ripristino da un backup precedente
+
+.Fasi
+. Nel riquadro di navigazione a sinistra, fare clic su *servizi*.image:services.jpg[""]
+. Fare clic su *istanze di produzione* o *istanze sandbox*.image:production_instances.jpg[""]
+image:sandbox_instances.jpg[""]
+. Fare clic sul numero di *istanze protette*.
+. Fare clic sul nome dell'organizzazione.image:organization.jpg[""]
+. Fare clic su *View Backup History* (Visualizza cronologia backup).
+. Selezionare per visualizzare i backup per un intervallo di tempo specifico o per selezionare un backup per una data specifica.
++
+.. Per selezionare i backup per un intervallo di tempo specifico, nell'angolo in alto a destra, fare clic sul menu a discesa accanto a *Mostra backup selezionati* e selezionare uno degli intervalli di giorni predefiniti.image:show_selected_backups.jpg[""]Viene visualizzato un elenco di backup che si sono verificati durante l'intervallo selezionato.
+.. Per selezionare un backup per una data specifica, fare clic sulla data del backup nel calendario, quindi selezionare il backup specifico desiderato. Il numero nel cerchio rosso indica il numero di backup eseguiti in quella data. I singoli cerchi verdi indicano i singoli backup.
+
+
+. Fare clic sull'oggetto contenente i singoli record che si desidera ripristinare, quindi cercare il record specifico.
+. Fare clic su *Restore* (Ripristina).image:restore.jpg[""]
+. Selezionare le opzioni di ripristino.
++
+.. Per impostazione predefinita, viene selezionato il comando Ripristina con sovrascrittura*. Questa opzione sostituisce la versione esistente del record che si sta ripristinando. Se si desidera mantenere la versione corrente del record e la versione ripristinata del record, deselezionare questa opzione.
+.. *Restore Relationship* ripristina i figli dei record padre insieme al padre fino a cinque livelli. Se non si seleziona per ripristinare la relazione, viene ripristinato solo il record principale.
+.. *Esporta dati* consente di esportare i dati da un backup in un momento specifico. È possibile esportare i dati a livello di oggetto o di organizzazione. Per ulteriori informazioni sulla funzione di esportazione dei dati, visitare il sito Web all'indirizzo link:task_downloading_export_data.html["Download dei dati di esportazione in corso"].
++
+
+NOTE: I lavori di esportazione sono disponibili solo per sette giorni dopo il completamento.
+
+
+
+. Fare clic su *Invia*. Viene visualizzato un messaggio che indica che le organizzazioni selezionate sono state inserite nella coda dei lavori.
+
+
+
+
+== Ripristino dei metadati
+
+È possibile ripristinare i metadati a livello di organizzazione o granulare.
+
+
+
+=== Ripristini dei metadati a livello di organizzazione
+
+.Fasi
+. Accedere a *servizi*.
+. Selezionare *istanze di produzione* o *istanze sandbox*.
+. Fare clic sul numero di istanze *protette*.
+. Fare clic sul nome dell'organizzazione.
+. Fare clic su *Restore* (Ripristina).
+. Selezionare un'opzione di ripristino.
++
+.. Per esportare i metadati, selezionare *Esporta metadati*. Viene creato un file zip.
++
+
+NOTE: I job di esportazione dei metadati sono disponibili per 30 giorni dopo il completamento.
+
+.. Per ripristinare i metadati, selezionare *Restore Metadata* (Ripristina metadati).
+
+
+. Fare clic su *Invia*.
+
+
+
+
+=== Ripristini di metadati a livello granulare
+
+.Fasi
+. Accedere a *servizi*.
+. Selezionare *istanze di produzione* o *istanze sandbox*.
+. Fare clic sul numero di istanze *protette*.
+. Fare clic sul nome dell'organizzazione.
+. Fare clic sulla scheda *tipi di metadati e componenti*. Viene visualizzato un elenco di tipi di metadati.
+. Selezionare i tipi di metadati che si desidera ripristinare.
+. Fare clic su *Restore* (Ripristina).
+. Selezionare un'opzione di ripristino.
++
+image:restore_options_export-restore_metadata.png["esportare e ripristinare le opzioni di ripristino dei metadati"]
+
++
+.. Per esportare i metadati, selezionare *Esporta metadati*. Viene creato un file zip.
++
+
+NOTE: I job di esportazione dei metadati sono disponibili per 30 giorni dopo il completamento.
+
+.. Per ripristinare i metadati, selezionare *Restore Metadata* (Ripristina metadati).
+
+
+. Fare clic su *Invia*.
+

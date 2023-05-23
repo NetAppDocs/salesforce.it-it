@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_canceling_job.html 
+keywords: netapp, saas backup, salesforce, canceling, jobs, backup, restore 
+summary: È possibile annullare un backup o un ripristino immediato. Non è possibile annullare un backup pianificato. 
+---
+= Annullamento di un lavoro
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile annullare un backup o un ripristino immediato. Non è possibile annullare un backup pianificato.
+
+
+toc::[]
+.Fasi
+. Fare clic su *Jobs* nel riquadro di spostamento di sinistra.
+. In *Recent Running Jobs* (lavori in esecuzione recenti), individuare il lavoro che si desidera annullare.
+. Fare clic su *Annulla*.
+
